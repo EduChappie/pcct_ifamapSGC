@@ -1,6 +1,6 @@
 # ifmap_pcct
 
-Um projeto ifam para o meu PCCT
+Repositório para criação do meu projeto de PCCT no IFAM de SGC
 
 ## Getting Started
 
