@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ifmap_pcct/src/components/botao.dart';
+import 'package:ifmap_pcct/src/themes/colors.dart';
+import 'package:ifmap_pcct/src/themes/text_style.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 
 
@@ -13,12 +16,13 @@ class Home_base extends StatelessWidget {
       appBar: const BarraNavegacao(),
 
       body: Container(
-        decoration: const BoxDecoration(
+        // comando para por imagem no fundo, achei feio, remover depois
+        /*decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/mapa_cartoon.png'),
                 fit: BoxFit.cover
             )
-        ),
+        ),*/
         alignment: Alignment.center,
         child: Column(
           children: [
@@ -27,12 +31,24 @@ class Home_base extends StatelessWidget {
             ),
             const Text(
                 "Setores",
-                style: TextStyle(
-                  fontSize: 48,
-                  fontFamily: 'SofiaSans',
-                  color: Colors.black87,
-                ),
+                style: TextStyles.h2 // importando estilo do text_style
             ),
+
+            //os botões estão organizados da seguinte forma
+            /*
+            * size = espaço para cima
+            * size = espaço para os lados
+            *   button
+            *
+            * size = espaço para cima
+            * size = espaço para os lados
+            *   button
+            *
+            * size = espaço para cima
+            * size = espaço para os lados
+            *   button
+            *
+            * */
 
             const SizedBox(
               height: 72,
@@ -41,24 +57,13 @@ class Home_base extends StatelessWidget {
             SizedBox(
               width: 262,
               height: 60,
-              child: ElevatedButton(
-                  onPressed: () { print("agropecuaria"); },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromRGBO(62, 62, 62, 1),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    )
-                  ),
-                  child: const Text(
-                      'Agropecuária',
-                      style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontFamily: 'SofiaSans'
-                    ),
-                  ),
-              ),
+              child: CustomButton(
+                label: 'Agropecuária',
+                onPressed: () { print("agro!!"); },
+
+              )
             ),
+
 
             const SizedBox(
               height: 72,
@@ -67,24 +72,12 @@ class Home_base extends StatelessWidget {
             SizedBox(
               width: 262,
               height: 60,
-              child: ElevatedButton(
-                onPressed: () { print("Pedagogico"); },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromRGBO(62, 62, 62, 1),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    )
-                ),
-                child: const Text(
-                  'Pedagógico',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                    fontFamily: 'SofiaSans'
-                  ),
-                ),
-              ),
+              child: CustomButton(
+                label: 'Pedagógico',
+                onPressed: () { print("escola!!"); },
+              )
             ),
+
 
             const SizedBox(
               height: 72,
@@ -93,29 +86,16 @@ class Home_base extends StatelessWidget {
             SizedBox(
               width: 262,
               height: 60,
-              child: ElevatedButton(
-                onPressed: () { print("administrativo"); },
-                style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromRGBO(62, 62, 62, 1),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(14),
-                    )
-                ),
-                child: const Text(
-                  'Administrativo',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'SofiaSans',
-                    fontSize: 24,
-                  ),
-                ),
-              ),
+              child: CustomButton(
+                label: 'Administrativo',
+                onPressed: () { print("administrativo!!"); },
+              )
             ),
           ],
         ),
       ),
 
-      //backgroundColor: const Color.fromRGBO(77, 77, 77, 1),
+      backgroundColor: AppColors.screen,
     );
   }
 

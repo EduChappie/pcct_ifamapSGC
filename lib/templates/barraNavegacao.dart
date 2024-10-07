@@ -1,6 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:ifmap_pcct/src/themes/colors.dart';
+import 'package:ifmap_pcct/src/themes/text_style.dart';
 
 class BarraNavegacao extends StatelessWidget implements PreferredSizeWidget {
   const BarraNavegacao({super.key});
@@ -11,16 +13,9 @@ class BarraNavegacao extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       title: const Text("IFMap"),
 
-      titleTextStyle: const TextStyle(
-        fontSize: 60,
-
-        fontFamily: 'SofiaSans',
-        fontWeight: FontWeight.normal,
-        color: Color.fromRGBO(1, 146, 63, 1),
-      ),
-
+      titleTextStyle: TextStyles.h1, // ligando ao style do arquivo text_style
       toolbarHeight: 92,
-      backgroundColor: const Color.fromRGBO(60, 60, 60, 1),
+      backgroundColor: AppColors.navBar,
     );
   }
 
