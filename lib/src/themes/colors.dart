@@ -6,7 +6,7 @@ class AppColors {
   static const Color button = Color(0xFF403E43);
   static const Color title = Color(0xFF01913F);
   static const Color textSimple = Color(0xFFFDFDFD);
-
+  static const Color listagem = Color(0xFF3E3E3E);
 }
 
 //0xFF01913F title

@@ -4,6 +4,9 @@ import 'package:flutter/widgets.dart';
 import 'package:ifmap_pcct/src/components/botao.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
 import 'package:ifmap_pcct/src/themes/text_style.dart';
+import 'package:ifmap_pcct/telas/administrativo.dart';
+import 'package:ifmap_pcct/telas/agropecuaria.dart';
+import 'package:ifmap_pcct/telas/pedagogico.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 
 
@@ -15,14 +18,15 @@ class Home_base extends StatelessWidget {
     return Scaffold(
       appBar: const BarraNavegacao(),
 
+      backgroundColor: AppColors.screen,
+
       body: Container(
         // comando para por imagem no fundo, achei feio, remover depois
-        /*decoration: const BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/mapa_cartoon.png'),
-                fit: BoxFit.cover
+                image: AssetImage('assets/images/logos/logo_1.png'),
             )
-        ),*/
+        ),
         alignment: Alignment.center,
         child: Column(
           children: [
@@ -54,14 +58,15 @@ class Home_base extends StatelessWidget {
               height: 72,
             ),
             // Botão 1 -> agropecuaria
-            SizedBox(
-              width: 262,
-              height: 60,
-              child: CustomButton(
-                label: 'Agropecuária',
-                onPressed: () { print("agro!!"); },
-
-              )
+            CustomButton(
+                label: "Agropecuaria",
+                onPressed: () {
+                  print("para setor agropecuario");
+                  Navigator.push(
+                      context, 
+                      MaterialPageRoute(builder: (context) => const AgroPage())
+                  );
+                }
             ),
 
 
@@ -69,13 +74,14 @@ class Home_base extends StatelessWidget {
               height: 72,
             ),
             // Botão 2 -> pedagogico
-            SizedBox(
-              width: 262,
-              height: 60,
-              child: CustomButton(
-                label: 'Pedagógico',
-                onPressed: () { print("escola!!"); },
-              )
+            CustomButton(
+                label: "Pedagógico",
+                onPressed: () {
+                  print("para setor pedagógico");
+                  Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const EscolaPage())
+                  );
+                }
             ),
 
 
@@ -83,19 +89,21 @@ class Home_base extends StatelessWidget {
               height: 72,
             ),
             // Botão 3 -> administrativo
-            SizedBox(
-              width: 262,
-              height: 60,
-              child: CustomButton(
-                label: 'Administrativo',
-                onPressed: () { print("administrativo!!"); },
-              )
+            CustomButton(
+              label: 'Administrativo',
+              onPressed: () {
+                print("para setor administrativo!!");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AdmPage())
+                );
+              },
             ),
           ],
         ),
       ),
 
-      backgroundColor: AppColors.screen,
+
     );
   }
 

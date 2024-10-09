@@ -12,7 +12,9 @@ class BarraNavegacao extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       centerTitle: true,
       title: const Text("IFMap"),
-
+      iconTheme: const IconThemeData(
+        color: AppColors.textSimple,
+      ),
       titleTextStyle: TextStyles.h1, // ligando ao style do arquivo text_style
       toolbarHeight: 92,
       backgroundColor: AppColors.navBar,
