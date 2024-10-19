@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 import 'colors.dart';
 
@@ -14,7 +15,7 @@ class TextStyles {
     fontSize: 48,
     fontFamily: 'SofiaSans',
     fontWeight: FontWeight.normal,
-    color: AppColors.textSimple,
+    color: Colors.black,
   );
 
   static const TextStyle listagem = TextStyle(

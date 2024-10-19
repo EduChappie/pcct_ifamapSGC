@@ -5,10 +5,23 @@ import 'package:ifmap_pcct/src/components/item_lista.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 import 'package:ifmap_pcct/src/themes/text_style.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
+import 'package:page_transition/page_transition.dart';
 
-class AdmPage extends StatelessWidget {
+import '../setores/database.dart';
+import '../setores/modelo_setores.dart';
+
+
+// classe mutável
+class AdmPage extends StatefulWidget {
   const AdmPage({super.key});
 
+  @override
+  AdmPageState createState() => AdmPageState();
+
+}
+
+// classe estática
+class AdmPageState extends State<AdmPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +50,7 @@ class AdmPage extends StatelessWidget {
                       text: "Protocolo",
                       onPressed: () {
                         print("ir para protocolo!!");
+                        movi(Dtbs.protocolo);
                       }
                   ),
                   const SizedBox(
@@ -46,6 +60,7 @@ class AdmPage extends StatelessWidget {
                       text: "Diretoria Geral",
                       onPressed: () {
                         print("ir para Diretoria Geral!!");
+                        movi(Dtbs.diretoriaGeral);
                       }
                   )
                 ],
@@ -55,4 +70,15 @@ class AdmPage extends StatelessWidget {
         )
     );
   }
+
+  movi (Map m) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (_) => SetorPages(setor: m),
+        )
+    );
+  }
+
+
 }

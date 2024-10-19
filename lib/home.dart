@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ifmap_pcct/setores/modelo_setores.dart';
 import 'package:ifmap_pcct/src/components/botao.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
 import 'package:ifmap_pcct/src/themes/text_style.dart';
@@ -8,6 +9,7 @@ import 'package:ifmap_pcct/telas/administrativo.dart';
 import 'package:ifmap_pcct/telas/agropecuaria.dart';
 import 'package:ifmap_pcct/telas/pedagogico.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
+import 'package:page_transition/page_transition.dart';
 
 
 class Home_base extends StatelessWidget {
@@ -24,7 +26,8 @@ class Home_base extends StatelessWidget {
         // comando para por imagem no fundo, achei feio, remover depois
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/logos/logo_1.png'),
+                image: AssetImage('assets/images/mapa_cartoon.png'),
+                fit: BoxFit.cover,
             )
         ),
         alignment: Alignment.center,
@@ -63,8 +66,10 @@ class Home_base extends StatelessWidget {
                 onPressed: () {
                   print("para setor agropecuario");
                   Navigator.push(
-                      context, 
-                      MaterialPageRoute(builder: (context) => const AgroPage())
+                      context,
+                      PageTransition(
+                          child: const AgroPage(),
+                          type: PageTransitionType.bottomToTop)
                   );
                 }
             ),
@@ -79,7 +84,9 @@ class Home_base extends StatelessWidget {
                 onPressed: () {
                   print("para setor pedagógico");
                   Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const EscolaPage())
+                    PageTransition(
+                        child: const EscolaPage(),
+                        type: PageTransitionType.bottomToTop)
                   );
                 }
             ),
@@ -93,9 +100,11 @@ class Home_base extends StatelessWidget {
               label: 'Administrativo',
               onPressed: () {
                 print("para setor administrativo!!");
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const AdmPage())
+                Navigator.push(context,
+                  PageTransition(
+                      child: const AdmPage(),
+                      type: PageTransitionType.bottomToTop,
+                  )
                 );
               },
             ),
