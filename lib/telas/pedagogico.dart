@@ -3,11 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 
+import '../setores/database.dart';
+import '../setores/modelo_setores.dart';
 import '../src/components/item_lista.dart';
 import '../src/themes/text_style.dart';
 
-class EscolaPage extends StatelessWidget {
+
+class EscolaPage extends StatefulWidget {
   const EscolaPage({super.key});
+
+  @override
+  EscolaPageState createState() => EscolaPageState();
+
+}
+
+class EscolaPageState extends State<EscolaPage> {
 
   @override
   Widget build(BuildContext context) {
@@ -37,6 +47,7 @@ class EscolaPage extends StatelessWidget {
                     text: "CGTI",
                     onPressed: () {
                       print("ir para CGTI!!");
+                      movi(Dtbs.pedagogico['cgti']);
                     }
                 ),
                 const SizedBox(
@@ -80,6 +91,15 @@ class EscolaPage extends StatelessWidget {
           ],
         ),
       )
+    );
+  }
+
+  movi (Map m) {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => SetorPages(setor: m),
+        )
     );
   }
 }

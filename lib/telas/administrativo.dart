@@ -50,7 +50,7 @@ class AdmPageState extends State<AdmPage> {
                       text: "Protocolo",
                       onPressed: () {
                         print("ir para protocolo!!");
-                        movi(Dtbs.protocolo);
+                        movi(Dtbs.administrativo['protocolo']);
                       }
                   ),
                   const SizedBox(
@@ -60,7 +60,7 @@ class AdmPageState extends State<AdmPage> {
                       text: "Diretoria Geral",
                       onPressed: () {
                         print("ir para Diretoria Geral!!");
-                        movi(Dtbs.diretoriaGeral);
+                        movi(Dtbs.administrativo['diretoriaGeral']);
                       }
                   )
                 ],
