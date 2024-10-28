@@ -13,7 +13,6 @@ class Dtbs {
       'coordenador': 'Mulher tal',
       'decris': 'o protocolo serva pra isso áí'
     },
-
     'diretoriaGeral': {
       'nome': 'Diretoria Geral',
       'coordenador': 'Renato Valadares',
