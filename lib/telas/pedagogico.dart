@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
+import 'package:page_transition/page_transition.dart';
 
 import '../setores/database.dart';
 import '../setores/modelo_setores.dart';
@@ -22,7 +23,7 @@ class EscolaPageState extends State<EscolaPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const BarraNavegacao(),
+      appBar: BarraNavegacao(),
 
       backgroundColor: AppColors.screen,
 
@@ -40,9 +41,6 @@ class EscolaPageState extends State<EscolaPage> {
 
             Column(
               children: [
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
                     text: "CGTI",
                     onPressed: () {
@@ -50,40 +48,32 @@ class EscolaPageState extends State<EscolaPage> {
                       movi(Dtbs.pedagogico['cgti']);
                     }
                 ),
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
                     text: "DAE",
                     onPressed: () {
                       print("ir para DAE!!");
+                      movi(Dtbs.pedagogico['dae']);
                     }
                 ),
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
-                    text: "NEABI",
+                    text: "CEABI",
                     onPressed: () {
-                      print("ir para NEABI!!");
+                      print("ir para CEABI!!");
+                      movi(Dtbs.pedagogico['ceabi']);
                     }
                 ),
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
-                    text: "Sala 1 - 12",
+                    text: "Sala 1 - 7",
                     onPressed: () {
-                      print("ver salas 1 a 12!!");
+                      print("ver salas 1 a 7!!");
+                      movi(Dtbs.pedagogico['salas']);
                     }
                 ),
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
-                    text: "Sala CVT 1 - 12",
+                    text: "Sala CVT 1 - 15",
                     onPressed: () {
-                      print("ir para salas 1 a 12!!");
+                      print("ir para salas 1 a 15!!");
+                      movi(Dtbs.pedagogico['salasCVT']);
                     }
                 ),
               ],
@@ -97,8 +87,9 @@ class EscolaPageState extends State<EscolaPage> {
   movi (Map m) {
     Navigator.push(
         context,
-        MaterialPageRoute(
-          builder: (_) => SetorPages(setor: m),
+        PageTransition(
+            child: SetorPages(setor: m),
+            type: PageTransitionType.rightToLeft
         )
     );
   }

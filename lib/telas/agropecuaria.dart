@@ -30,17 +30,11 @@ class AgroPage extends StatelessWidget {
 
             Column(
               children: [
-                const SizedBox(
-                  height: 12,
-                ),
                 Listagem(
                     text: "Psicultura",
                     onPressed: () {
                       print("ir para psicultura!!");
                     }
-                ),
-                const SizedBox(
-                  height: 12,
                 ),
                 Listagem(
                     text: "Instituto Nacional de Meterologia",

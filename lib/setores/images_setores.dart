@@ -34,6 +34,9 @@ class ImagensState extends State<Imagens> {
             child: Container(
               height: 500,
               child: PageView.builder(
+                  controller: PageController(
+                    viewportFraction: 0.92
+                  ),
                   itemCount: widget.url_images.length,
                   itemBuilder: (BuildContext context, int index) {
                     return SlideImg(

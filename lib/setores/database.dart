@@ -12,7 +12,7 @@ class Dtbs {
         'assets/fotos_setores/adm/protocolo/2.png'
       ],
       'coordenador': ['Mulher tal', 'homem tal', 'faxineiro tal'],
-      'decris': 'o protocolo serva pra isso áí, Significado tal para tal...'
+      'decris': 'Nome: piriri pororo o \nDescrição: protocolo serva pra isso áí \nSignificado tal para tal...'
     },
     'gabinete': {
       'nome': 'Gabinete',
@@ -24,47 +24,110 @@ class Dtbs {
         'assets/fotos_setores/adm/gabinete/3.jpg',
       ],
       'coordenador': ['Renato Valadares'],
-      'decris': 'Loca do presidente do IFAM'
+      'decris': 'Nome: piriri pororo o \nDescrição: protocolo serva pra isso áí \nSignificado tal para tal...'
     } // modelo lindo!! e funcional
   };
 
   static const Map pedagogico = {
     'cgti': {
-      'nome': 'Coordenação e Gestão de Tecnologia e Informação',
-      'coordenador': 'Ricardo Nunes',
-      'decris': 'você pode levar o seu pc lá pra consertar :)'
+      'nome': "CGTI",
+      'nome_completo': 'Coordenação e Gestão de Tecnologia e Informação',
+      'imgMap': 'assets/fotos_setores/pedag/cgti/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/cgti/geral.jpg',
+        'assets/fotos_setores/pedag/cgti/1.jpg',
+        'assets/fotos_setores/pedag/cgti/2.jpg',
+        'assets/fotos_setores/pedag/cgti/3.jpg',
+
+      ],
+      'coordenador': ['Ricardo', 'Marquinhos'],
+      'decris': ' Coordenação e Gestão de Tecnologia e Informação\nO pessoal aqui cuida dos computadores, se acabar a internet é culpa deles.'
+    },
+    'ceabi': {
+      'nome': "CEABI",
+      'nome_completo': 'Centro de Estudos Afro-Brasileiros e Indígenas',
+      'imgMap': 'assets/fotos_setores/pedag/ceabi/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/ceabi/geral.jpg',
+        'assets/fotos_setores/pedag/ceabi/1.jpg',
+        'assets/fotos_setores/pedag/ceabi/2.jpg'
+      ],
+      'coordenador': ['Joscival', 'Leiticia', 'E mais alguém...'],
+      'decris': ' Centro de Estudos Afro-Brasileiros e Indígenas\nO pessoal estuda coisas Indigenas aqui.'
+    },
+    'dae': {
+      'nome': "DAE",
+      'nome_completo': 'Departamento de Assistência ao Educando',
+      'imgMap': 'assets/fotos_setores/pedag/dae/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/dae/geral.jpg',
+        'assets/fotos_setores/pedag/dae/1.jpg',
+        'assets/fotos_setores/pedag/dae/2.jpg'
+      ],
+      'coordenador': ['Adreina', 'Laura', 'Joaquim'],
+      'decris': ' Departamento de Assistência ao Educando\nO pessoal é gente boa aqui, pode contar com eles.'
+    },
+    'salasCVT': {
+      'nome': "Salas CVT",
+      'imgMap': 'assets/fotos_setores/pedag/salasCVT/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/salasCVT/geral.jpg',
+        'assets/fotos_setores/pedag/salasCVT/geral1.jpg',
+        'assets/fotos_setores/pedag/salasCVT/geral2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/geral3.jpg',
+        'assets/fotos_setores/pedag/salasCVT/geral4.jpg',
+        'assets/fotos_setores/pedag/salasCVT/geral5.jpg',
+        'assets/fotos_setores/pedag/salasCVT/1.jpg',
+        'assets/fotos_setores/pedag/salasCVT/2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/2 2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/3.jpg',
+        'assets/fotos_setores/pedag/salasCVT/4.jpg',
+        'assets/fotos_setores/pedag/salasCVT/5.jpg',
+        'assets/fotos_setores/pedag/salasCVT/5 2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/12.jpg',
+        'assets/fotos_setores/pedag/salasCVT/12 2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/13.jpg',
+        'assets/fotos_setores/pedag/salasCVT/13 2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/14.jpg',
+        'assets/fotos_setores/pedag/salasCVT/14 2.jpg',
+        'assets/fotos_setores/pedag/salasCVT/15.jpg',
+        'assets/fotos_setores/pedag/salasCVT/15 2.jpg',
+      ],
+      'coordenador': ['Não possui, coordenador.'],
+      'decris': ' Salas, 1 a 15\nSalas específicas ou normais para de aula.'
+    },
+    'salas': {
+      'nome': "Salas de Aulas",
+      'nome_completo': "Salas de Aulas 1 - 7",
+      'imgMap': 'assets/fotos_setores/pedag/salas/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/salas/geral.jpg',
+        'assets/fotos_setores/pedag/salas/geral1.jpg',
+        'assets/fotos_setores/pedag/salas/1.jpg',
+        'assets/fotos_setores/pedag/salas/2.jpg',
+        'assets/fotos_setores/pedag/salas/2 2.jpg',
+        'assets/fotos_setores/pedag/salas/3.jpg',
+        'assets/fotos_setores/pedag/salas/4.jpg',
+        'assets/fotos_setores/pedag/salas/4 2.jpg',
+        'assets/fotos_setores/pedag/salas/5.jpg',
+        'assets/fotos_setores/pedag/salas/5 2.jpg',
+        'assets/fotos_setores/pedag/salas/6.jpg',
+        'assets/fotos_setores/pedag/salas/6 2.jpg',
+        'assets/fotos_setores/pedag/salas/7.jpg',
+        'assets/fotos_setores/pedag/salas/7 2.jpg',
+      ],
+      'coordenador': ['Não possui, coordenador.'],
+      'decris': ' Salas de Aulas 1 - 7\nSalas normais com alunos dentro.'
     }
   };
 
-  /*
-  static const Map protocolo = {
-    'nome': 'Protocolo',
-    'local': 'Administrativo',
-    'coordenador': 'Mulher tal',
-    'decris': 'o protocolo serva pra isso áí'
-  };
-  static const Map diretoriaGeral = {
-    'nome': 'Diretoria Geral',
-    'local': 'Administrativo',
-    'coordenador': 'Renato Valadares',
-    'decris': 'Loca do presidente do IFAM' // isso ia da muito trabalho, fora que ia ficar desorganizado!!
-  };*/
 }
 
-/*
-static var protocolo = {
-  'nome': 'protocolo',
-  'local': 'administrativo',
-  'coordenador': 'carinha aqui',
-  'decris': "o protocolo serve pra isso ai"
-  modelo errado, não funciona essa drogaaasdfadsa
-};*/
-
 // array modelo
-
 /*
 'nome setor': {
       'nome': "nome inteiro do setor",
+      'nome_completo': "nome completo",
       'imgMap': 'assets/fotos_setores/img cartoon do setor',
       'imgCarrosel': [
         'assets/fotos_setores/geral',

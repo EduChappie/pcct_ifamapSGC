@@ -43,9 +43,6 @@ class AdmPageState extends State<AdmPage> {
 
               Column(
                 children: [
-                  const SizedBox(
-                    height: 12,
-                  ),
                   Listagem(
                       text: "Protocolo",
                       onPressed: () {
@@ -53,13 +50,10 @@ class AdmPageState extends State<AdmPage> {
                         movi(Dtbs.administrativo['protocolo']);
                       }
                   ),
-                  const SizedBox(
-                    height: 12,
-                  ),
                   Listagem(
-                      text: "Diretoria Geral",
+                      text: "Gabinete",
                       onPressed: () {
-                        print("ir para Diretoria Geral!!");
+                        print("ir para Gabinete!!");
                         movi(Dtbs.administrativo['gabinete']);
                       }
                   )
@@ -74,8 +68,9 @@ class AdmPageState extends State<AdmPage> {
   movi (Map m) {
     Navigator.push(
         context,
-        MaterialPageRoute(
-            builder: (_) => SetorPages(setor: m),
+        PageTransition(
+            child: SetorPages(setor: m),
+            type: PageTransitionType.rightToLeft
         )
     );
   }

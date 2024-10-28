@@ -4,14 +4,43 @@ import 'package:flutter/material.dart';
 import 'package:ifmap_pcct/src/themes/colors.dart';
 import 'package:ifmap_pcct/src/themes/text_style.dart';
 
-class BarraNavegacao extends StatelessWidget implements PreferredSizeWidget {
-  const BarraNavegacao({super.key});
+class BarraNavegacao extends StatefulWidget implements PreferredSizeWidget {
+
+  String?  nome;
+  BarraNavegacao({super.key, this.nome});
+
+
+  @override
+  Size get preferredSize => Size.fromHeight(92);
+
+  @override
+  BarraNavegacaoState createState() => BarraNavegacaoState();
+
+
+}
+
+class BarraNavegacaoState extends State<BarraNavegacao> {
+
+  @override
+  void initState() {
+    /*
+    super.initState();
+    if (widget.name!.isEmpty) { // senão tiver nome, bota o nome normal
+      print('ta vazio');
+      widget.name = "IFMap";
+
+    } else {
+      print('não ta vazio');// se tiver nome, bota o nome que pediram
+    }*/
+  }
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: const Text("IFMap"),
+      title: Text(
+        '${ widget.nome==null ? "IFMap" : widget.nome  }'
+      ),
       iconTheme: const IconThemeData(
         color: AppColors.textSimple,
       ),
@@ -20,8 +49,5 @@ class BarraNavegacao extends StatelessWidget implements PreferredSizeWidget {
       backgroundColor: AppColors.navBar,
     );
   }
-
-  @override
-  Size get preferredSize => const Size.fromHeight(92);
 
 }

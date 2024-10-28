@@ -67,6 +67,11 @@ flutter:
     - assets/fotos_setores/adm/
     - assets/fotos_setores/adm/protocolo/
     - assets/fotos_setores/adm/gabinete/
+    - assets/fotos_setores/pedag/ceabi/
+    - assets/fotos_setores/pedag/cgti/
+    - assets/fotos_setores/pedag/dae/
+    - assets/fotos_setores/pedag/salas/
+    - assets/fotos_setores/pedag/salasCVT/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

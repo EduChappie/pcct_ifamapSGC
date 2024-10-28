@@ -18,7 +18,7 @@ class Home_base extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const BarraNavegacao(),
+      appBar: BarraNavegacao(),
 
       backgroundColor: AppColors.screen,
 
@@ -57,9 +57,6 @@ class Home_base extends StatelessWidget {
             *
             * */
 
-            const SizedBox(
-              height: 72,
-            ),
             // Botão 1 -> agropecuaria
             CustomButton(
                 label: "Agropecuaria",
@@ -75,10 +72,7 @@ class Home_base extends StatelessWidget {
             ),
 
 
-            const SizedBox(
-              height: 72,
-            ),
-            // Botão 2 -> pedagogico
+            //Botão 2 -> pedagogico
             CustomButton(
                 label: "Pedagógico",
                 onPressed: () {
@@ -91,10 +85,6 @@ class Home_base extends StatelessWidget {
                 }
             ),
 
-
-            const SizedBox(
-              height: 72,
-            ),
             // Botão 3 -> administrativo
             CustomButton(
               label: 'Administrativo',

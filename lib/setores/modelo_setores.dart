@@ -43,7 +43,7 @@ class SetorPagesState extends State<SetorPages> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BarraNavegacao(),
+      appBar: BarraNavegacao(nome: widget.setor['nome'],),
 
       backgroundColor: AppColors.backDark,
       body: PageView(

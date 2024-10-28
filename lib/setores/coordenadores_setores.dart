@@ -53,7 +53,7 @@ class CoordenadoresState extends State<Coordenadores> {
             child: Container(
               alignment: Alignment.center,
               child: Text(
-                "Descrição: ${widget.des}",
+                widget.des,
                 style: TextStyles.listagem,
               ),
             ),

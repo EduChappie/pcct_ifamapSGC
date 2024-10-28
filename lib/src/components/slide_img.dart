@@ -11,6 +11,7 @@ class SlideImg extends StatelessWidget{
     return Padding(
       padding: const EdgeInsets.only(top: 5, bottom: 32),
       child: Container(
+        margin: const EdgeInsets.only(left: 6, right: 6),
         width: 267,
         height: 180,
         alignment: Alignment.center,

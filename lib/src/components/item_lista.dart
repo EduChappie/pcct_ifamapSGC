@@ -11,25 +11,28 @@ class Listagem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 335,
-      height: 52,
-      child: TextButton(
-        style: TextButton.styleFrom(
-          backgroundColor: AppColors.listagem,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          )
-        ),
-        onPressed: onPressed,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text(
-                text,
-                style: TextStyles.listagem,
-            ),
-          ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: SizedBox(
+        width: 335,
+        height: 52,
+        child: TextButton(
+          style: TextButton.styleFrom(
+            backgroundColor: AppColors.listagem,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            )
+          ),
+          onPressed: onPressed,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                  text,
+                  style: TextStyles.listagem,
+              ),
+            ],
+          ),
         ),
       ),
     );
