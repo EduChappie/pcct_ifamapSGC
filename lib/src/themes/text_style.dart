@@ -10,6 +10,12 @@ class TextStyles {
     fontWeight: FontWeight.w800,
     color: AppColors.title,
   );
+  static const TextStyle h1Low = TextStyle(
+    fontSize: 42,
+    fontFamily: 'SofiaSans',
+    fontWeight: FontWeight.w800,
+    color: AppColors.title,
+  );
 
   static const TextStyle h2 = TextStyle(
     fontSize: 48,
@@ -26,7 +32,7 @@ class TextStyles {
   );
 
   static const TextStyle tituloSetor = TextStyle(
-    fontSize: 48,
+    fontSize: 36,
     fontFamily: 'SofiaSans',
     fontWeight: FontWeight.w800,
     color: Colors.white

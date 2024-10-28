@@ -22,19 +22,6 @@ class BarraNavegacao extends StatefulWidget implements PreferredSizeWidget {
 class BarraNavegacaoState extends State<BarraNavegacao> {
 
   @override
-  void initState() {
-    /*
-    super.initState();
-    if (widget.name!.isEmpty) { // senão tiver nome, bota o nome normal
-      print('ta vazio');
-      widget.name = "IFMap";
-
-    } else {
-      print('não ta vazio');// se tiver nome, bota o nome que pediram
-    }*/
-  }
-
-  @override
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
@@ -44,7 +31,7 @@ class BarraNavegacaoState extends State<BarraNavegacao> {
       iconTheme: const IconThemeData(
         color: AppColors.textSimple,
       ),
-      titleTextStyle: TextStyles.h1, // ligando ao style do arquivo text_style
+      titleTextStyle: widget.nome==null?TextStyles.h1:TextStyles.h1Low, // ligando ao style do arquivo text_style
       toolbarHeight: 92,
       backgroundColor: AppColors.navBar,
     );

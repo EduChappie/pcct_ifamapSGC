@@ -122,17 +122,32 @@ class Dtbs {
   };
 
   static const Map agropecuaria = {
-    'nome setor': {
-      'nome': "nome inteiro do setor",
-      'nome_completo': "nome completo",
-      'imgMap': 'assets/fotos_setores/img cartoon do setor',
+    'suinocultura': {
+      'nome': "Suinocultura",
+      'nome_completo': "Suinocultura",
+      'imgMap': 'assets/fotos_setores/agro/suinocultura/map.png',
       'imgCarrosel': [
-        'assets/fotos_setores/geral',
-        'assets/fotos_setores/1',
-        'assets/fotos_setores/2'
+        'assets/fotos_setores/agro/suinocultura/1.jpg',
+        'assets/fotos_setores/agro/suinocultura/2.jpg',
+        'assets/fotos_setores/agro/suinocultura/geral.jpg',
+        'assets/fotos_setores/agro/suinocultura/geral1.jpg'
       ],
-      'coordenador': ['nome dos coordenadores'],
-      'decris': 'toda a descrição aaui!!!!'
+      'coordenador': ['Renato também, acho'],
+      'decris': 'Suinocultura, tem porco lá.'
+    },
+    'psicultura': {
+      'nome': "Psicultura",
+      'nome_completo': "Psicultura",
+      'imgMap': 'assets/fotos_setores/agro/psicultura/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/agro/psicultura/1.jpg',
+        'assets/fotos_setores/agro/psicultura/2.jpg',
+        'assets/fotos_setores/agro/psicultura/3.jpg',
+        'assets/fotos_setores/agro/psicultura/4.jpg',
+        'assets/fotos_setores/agro/psicultura/5.jpg'
+      ],
+      'coordenador': ['Renato também'],
+      'decris': 'Renato é dono de tudo aqui uau!!'
     }
   };
 
