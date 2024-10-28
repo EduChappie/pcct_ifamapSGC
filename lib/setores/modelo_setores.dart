@@ -7,6 +7,9 @@ import 'package:ifmap_pcct/src/themes/text_style.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 
 import '../src/themes/colors.dart';
+import 'coordenadores_setores.dart';
+import 'images_setores.dart';
+import 'localizacao_setores.dart';
 
 class SetorPages extends StatefulWidget {
   Map setor;
@@ -21,13 +24,81 @@ class SetorPages extends StatefulWidget {
 }
 
 class SetorPagesState extends State<SetorPages> {
+  int pgAtual = 0;
+  late PageController pg;
+
+  @override
+  void initState() {
+    super.initState();
+    pg = PageController(initialPage: pgAtual);
+  }
+
+  setPaginaAtual(pagina) {
+    setState(() {
+      pgAtual = pagina;
+    });
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: BarraNavegacao(),
+
+      backgroundColor: AppColors.backDark,
+      body: PageView(
+        controller: pg,
+        onPageChanged: setPaginaAtual,
+        children: [
+          Imagens(url_images: widget.setor['imgCarrosel']),
+          Localizacao(cartoon: widget.setor['imgMap']),
+          Coordenadores(coor: widget.setor['coordenador'], des: widget.setor['decris']),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: pgAtual,
+        type: BottomNavigationBarType.fixed,
+        items: const [ // lista de itens do bottom navigation
+          BottomNavigationBarItem(
+              icon: Icon(Icons.image),
+              label: 'Imagens'
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.pin_drop),
+              label: "Localização"
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.info),
+              label: "Informações"
+          )
+        ],
+        backgroundColor: AppColors.navBar,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.grey,
+        onTap: (pagina) { // configuração de troca de página
+          pg.animateToPage(
+              pagina,
+              duration: Duration(milliseconds: 200),
+              curve: Curves.ease
+          );
+        },
+      ),
+    );
+  }
+
+}
+
+
+
+/*
+class SetorPagesState extends State<SetorPages> {
   late PageController pageCtrl;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
 
-      backgroundColor: AppColors.screen,
+      backgroundColor: AppColors.backDark,
 
       appBar: BarraNavegacao(),
       body: Container(
@@ -119,3 +190,4 @@ class SetorPagesState extends State<SetorPages> {
   }
 
 }
+*/

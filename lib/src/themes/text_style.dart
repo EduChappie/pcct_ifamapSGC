@@ -25,6 +25,13 @@ class TextStyles {
     color: AppColors.textSimple
   );
 
+  static const TextStyle tituloSetor = TextStyle(
+    fontSize: 48,
+    fontFamily: 'SofiaSans',
+    fontWeight: FontWeight.w800,
+    color: Colors.white
+  );
+
   static const TextStyle button = TextStyle(
     fontSize: 24,
     fontFamily: 'SofiaSans',

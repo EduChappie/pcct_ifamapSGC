@@ -60,7 +60,7 @@ class AdmPageState extends State<AdmPage> {
                       text: "Diretoria Geral",
                       onPressed: () {
                         print("ir para Diretoria Geral!!");
-                        movi(Dtbs.administrativo['diretoriaGeral']);
+                        movi(Dtbs.administrativo['gabinete']);
                       }
                   )
                 ],

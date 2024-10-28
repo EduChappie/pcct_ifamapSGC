@@ -64,7 +64,9 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/fotos_setores/adm/
     - assets/fotos_setores/adm/protocolo/
+    - assets/fotos_setores/adm/gabinete/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
