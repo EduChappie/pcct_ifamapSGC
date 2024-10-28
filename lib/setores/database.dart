@@ -6,10 +6,10 @@ class Dtbs {
       'nome': "Protocolo",
       'imgMap': 'assets/fotos_setores/adm/protocolo/map.png',
       'imgCarrosel': [
-        'assets/fotos_setores/adm/geral.png',
+        'assets/fotos_setores/adm/geral.jpg',
         'assets/fotos_setores/adm/geral1.jpg',
-        'assets/fotos_setores/adm/protocolo/1.png',
-        'assets/fotos_setores/adm/protocolo/2.png'
+        'assets/fotos_setores/adm/protocolo/1.jpg',
+        'assets/fotos_setores/adm/protocolo/2.jpg'
       ],
       'coordenador': ['Mulher tal', 'homem tal', 'faxineiro tal'],
       'decris': 'Nome: piriri pororo o \nDescrição: protocolo serva pra isso áí \nSignificado tal para tal...'
@@ -24,7 +24,7 @@ class Dtbs {
         'assets/fotos_setores/adm/gabinete/3.jpg',
       ],
       'coordenador': ['Renato Valadares'],
-      'decris': 'Nome: piriri pororo o \nDescrição: protocolo serva pra isso áí \nSignificado tal para tal...'
+      'decris': 'Nome: piriri pororo o \nDescrição: local do presidente \nSignificado tal para tal...'
     } // modelo lindo!! e funcional
   };
 
@@ -101,7 +101,7 @@ class Dtbs {
       'nome_completo': "Salas de Aulas 1 - 7",
       'imgMap': 'assets/fotos_setores/pedag/salas/map.png',
       'imgCarrosel': [
-        'assets/fotos_setores/pedag/salas/geral.jpg',
+        'assets/fotos_setores/pedag/salas/geral1.jpg',
         'assets/fotos_setores/pedag/salas/geral1.jpg',
         'assets/fotos_setores/pedag/salas/1.jpg',
         'assets/fotos_setores/pedag/salas/2.jpg',
@@ -118,6 +118,21 @@ class Dtbs {
       ],
       'coordenador': ['Não possui, coordenador.'],
       'decris': ' Salas de Aulas 1 - 7\nSalas normais com alunos dentro.'
+    }
+  };
+
+  static const Map agropecuaria = {
+    'nome setor': {
+      'nome': "nome inteiro do setor",
+      'nome_completo': "nome completo",
+      'imgMap': 'assets/fotos_setores/img cartoon do setor',
+      'imgCarrosel': [
+        'assets/fotos_setores/geral',
+        'assets/fotos_setores/1',
+        'assets/fotos_setores/2'
+      ],
+      'coordenador': ['nome dos coordenadores'],
+      'decris': 'toda a descrição aaui!!!!'
     }
   };
 
