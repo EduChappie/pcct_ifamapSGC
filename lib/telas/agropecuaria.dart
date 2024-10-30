@@ -39,23 +39,27 @@ class AgroPageState extends State<AgroPage> {
                 style: TextStyles.h2,
               ),
 
-              Column(
-                children: [
-                  Listagem(
-                      text: "Psicultura",
-                      onPressed: () {
-                        print("ir para psicultura!!");
-                        movi(Dtbs.agropecuaria['psicultura']);
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 335,
+                  height: 500,
+                  alignment: Alignment.center,
+                  child: ListView.builder(
+                      itemCount: Dtbs.agropecuaria.length,
+                      itemBuilder: (BuildContext context, int index) {
+                        String k = Dtbs.agropecuaria.keys.elementAt(index);
+
+                        return Listagem(
+                            text: Dtbs.agropecuaria[k]['nome'],
+                            onPressed: () {
+                              print("ir para ${Dtbs.agropecuaria[k]['nome']}");
+                              movi(Dtbs.agropecuaria[k]);
+                            }
+                        );
                       }
                   ),
-                  Listagem(
-                      text: "Suinocultura",
-                      onPressed: () {
-                        print("ir para INMET!!");
-                        movi(Dtbs.agropecuaria['suinocultura']);
-                      }
-                  )
-                ],
+                ),
               )
             ],
           ),

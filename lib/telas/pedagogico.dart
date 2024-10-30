@@ -39,44 +39,27 @@ class EscolaPageState extends State<EscolaPage> {
               style: TextStyles.h2,
             ),
 
-            Column(
-              children: [
-                Listagem(
-                    text: "CGTI",
-                    onPressed: () {
-                      print("ir para CGTI!!");
-                      movi(Dtbs.pedagogico['cgti']);
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: 335,
+                height: 500,
+                alignment: Alignment.center,
+                child: ListView.builder(
+                    itemCount: Dtbs.pedagogico.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      String k = Dtbs.pedagogico.keys.elementAt(index);
+
+                      return Listagem(
+                          text: Dtbs.pedagogico[k]['nome'],
+                          onPressed: () {
+                            print("ir para ${Dtbs.pedagogico[k]['nome']}");
+                            movi(Dtbs.pedagogico[k]);
+                          }
+                      );
                     }
                 ),
-                Listagem(
-                    text: "DAE",
-                    onPressed: () {
-                      print("ir para DAE!!");
-                      movi(Dtbs.pedagogico['dae']);
-                    }
-                ),
-                Listagem(
-                    text: "CEABI",
-                    onPressed: () {
-                      print("ir para CEABI!!");
-                      movi(Dtbs.pedagogico['ceabi']);
-                    }
-                ),
-                Listagem(
-                    text: "Sala 1 - 7",
-                    onPressed: () {
-                      print("ver salas 1 a 7!!");
-                      movi(Dtbs.pedagogico['salas']);
-                    }
-                ),
-                Listagem(
-                    text: "Sala CVT 1 - 15",
-                    onPressed: () {
-                      print("ir para salas 1 a 15!!");
-                      movi(Dtbs.pedagogico['salasCVT']);
-                    }
-                ),
-              ],
+              ),
             )
           ],
         ),

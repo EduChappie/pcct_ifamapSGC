@@ -41,7 +41,51 @@ class AdmPageState extends State<AdmPage> {
                 style: TextStyles.h2,
               ),
 
-              Column(
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: 335,
+                  height: 500,
+                  alignment: Alignment.center,
+                  child: ListView.builder(
+                      itemCount: Dtbs.administrativo.length,
+                      itemBuilder: (BuildContext _, int index) {
+                        // pegar valor chave
+                        String k = Dtbs.administrativo.keys.elementAt(index);
+
+                        return Listagem(
+                            text: Dtbs.administrativo[k]['nome'],
+                            onPressed: () {
+                              print("ir para ${Dtbs.administrativo[k]['nome']}");
+                              movi(Dtbs.administrativo[k]);
+                            }
+                        );
+                      }
+                  ),
+                ),
+              )
+
+            ],
+          ),
+        )
+    );
+  }
+
+  movi (Map m) {
+    Navigator.push(
+        context,
+        PageTransition(
+            child: SetorPages(setor: m),
+            type: PageTransitionType.rightToLeft
+        )
+    );
+  }
+
+
+}
+
+/*
+Column(
                 children: [
                   Listagem(
                       text: "Protocolo",
@@ -66,21 +110,4 @@ class AdmPageState extends State<AdmPage> {
                   )
                 ],
               )
-            ],
-          ),
-        )
-    );
-  }
-
-  movi (Map m) {
-    Navigator.push(
-        context,
-        PageTransition(
-            child: SetorPages(setor: m),
-            type: PageTransitionType.rightToLeft
-        )
-    );
-  }
-
-
-}
+ */

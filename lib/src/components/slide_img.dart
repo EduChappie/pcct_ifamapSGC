@@ -21,7 +21,7 @@ class SlideImg extends StatelessWidget{
         decoration: BoxDecoration(
           border: Border.all(
             width: 1,
-            color: Colors.grey,
+            color: Colors.black,
           ),
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
