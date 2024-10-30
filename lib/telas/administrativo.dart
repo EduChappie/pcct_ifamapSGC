@@ -56,6 +56,13 @@ class AdmPageState extends State<AdmPage> {
                         print("ir para Gabinete!!");
                         movi(Dtbs.administrativo['gabinete']);
                       }
+                  ),
+                  Listagem(
+                      text: "Ginásio",
+                      onPressed: () {
+                        print('ir para Ginásio');
+                        movi(Dtbs.administrativo['ginasio']);
+                      }
                   )
                 ],
               )

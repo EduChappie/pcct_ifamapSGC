@@ -35,7 +35,14 @@ class TextStyles {
     fontSize: 36,
     fontFamily: 'SofiaSans',
     fontWeight: FontWeight.w800,
-    color: Colors.white
+    color: Colors.black
+  );
+
+  static const TextStyle listagemSetor = TextStyle(
+      fontSize: 21,
+      fontFamily: 'SofiaSans',
+      fontWeight: FontWeight.w700,
+      color: Colors.black
   );
 
   static const TextStyle button = TextStyle(

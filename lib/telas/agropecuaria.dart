@@ -49,7 +49,7 @@ class AgroPageState extends State<AgroPage> {
                       }
                   ),
                   Listagem(
-                      text: "Instituto Nacional de Meterologia",
+                      text: "Suinocultura",
                       onPressed: () {
                         print("ir para INMET!!");
                         movi(Dtbs.agropecuaria['suinocultura']);

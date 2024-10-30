@@ -25,7 +25,20 @@ class Dtbs {
       ],
       'coordenador': ['Renato Valadares'],
       'decris': 'Nome: piriri pororo o \nDescrição: local do presidente \nSignificado tal para tal...'
-    } // modelo lindo!! e funcional
+    }, // modelo lindo!! e funcional
+    'ginasio': {
+      'nome': "Ginásio",
+      'nome_completo': "Ginásio",
+      'imgMap': 'assets/fotos_setores/adm/ginasio/map.png',
+      'imgCarrosel': [
+        'assets/fotos_setores/adm/ginasio/geral.jpg',
+        'assets/fotos_setores/adm/ginasio/geral1.jpg',
+        'assets/fotos_setores/adm/ginasio/1.jpg',
+        'assets/fotos_setores/adm/ginasio/2.jpg'
+      ],
+      'coordenador': ['de Todo mundo!!'],
+      'decris': 'Ginásio para aulas de Educação Física ou treinos.'
+    }
   };
 
   static const Map pedagogico = {

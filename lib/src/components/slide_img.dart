@@ -1,5 +1,8 @@
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+import '../themes/colors.dart';
 
 class SlideImg extends StatelessWidget{
   final String img;
@@ -16,6 +19,10 @@ class SlideImg extends StatelessWidget{
         height: 180,
         alignment: Alignment.center,
         decoration: BoxDecoration(
+          border: Border.all(
+            width: 1,
+            color: Colors.grey,
+          ),
           borderRadius: BorderRadius.circular(20),
           image: DecorationImage(
             image: AssetImage(img),

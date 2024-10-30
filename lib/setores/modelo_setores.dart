@@ -45,7 +45,7 @@ class SetorPagesState extends State<SetorPages> {
     return Scaffold(
       appBar: BarraNavegacao(nome: widget.setor['nome'],),
 
-      backgroundColor: AppColors.backDark,
+      backgroundColor: AppColors.screen,
       body: PageView(
         controller: pg,
         onPageChanged: setPaginaAtual,

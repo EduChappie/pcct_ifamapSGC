@@ -41,7 +41,7 @@ class CoordenadoresState extends State<Coordenadores> {
                     alignment: Alignment.center,
                     child: Text(
                       '. ${widget.coor[index]}',
-                      style: TextStyles.listagem,
+                      style: TextStyles.listagemSetor,
                     ),
                   ),
                 );
@@ -54,7 +54,7 @@ class CoordenadoresState extends State<Coordenadores> {
               alignment: Alignment.center,
               child: Text(
                 widget.des,
-                style: TextStyles.listagem,
+                style: TextStyles.listagemSetor,
               ),
             ),
           )
