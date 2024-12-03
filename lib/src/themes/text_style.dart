@@ -45,6 +45,13 @@ class TextStyles {
       color: Colors.black
   );
 
+  static const TextStyle info = TextStyle(
+      fontSize: 18,
+      fontFamily: 'SofiaSans',
+      fontWeight: FontWeight.w500,
+      color: Colors.black
+  );
+
   static const TextStyle button = TextStyle(
     fontSize: 24,
     fontFamily: 'SofiaSans',

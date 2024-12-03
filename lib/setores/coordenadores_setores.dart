@@ -30,14 +30,14 @@ class CoordenadoresState extends State<Coordenadores> {
             ),
           ),
           Container(
-            height: 250,
+            height: 150,
             child: ListView.builder(
               itemCount: widget.coor.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
                   padding: const EdgeInsets.only(top: 16.0),
                   child: Container(
-                    height: 50,
+                    height: 60,
                     alignment: Alignment.center,
                     child: Text(
                       '. ${widget.coor[index]}',
@@ -49,12 +49,12 @@ class CoordenadoresState extends State<Coordenadores> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.only(top: 12, left: 12.0, right: 12.0),
             child: Container(
               alignment: Alignment.center,
               child: Text(
                 widget.des,
-                style: TextStyles.listagemSetor,
+                style: TextStyles.info,
               ),
             ),
           )

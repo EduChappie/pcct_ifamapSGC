@@ -11,11 +11,12 @@ class Dtbs {
         'assets/fotos_setores/adm/protocolo/1.jpg',
         'assets/fotos_setores/adm/protocolo/2.jpg'
       ],
-      'coordenador': ['Mulher tal', 'homem tal', 'faxineiro tal'],
-      'decris': 'Nome: piriri pororo o \nDescrição: protocolo serva pra isso áí \nSignificado tal para tal...'
+      'coordenador': ['TAE Márcia Aguiar França', 'TAE Willian Rodrigues Carvalho '],
+      'decris': 'O protocolo é um setor responsável por receber e encaminhar requerimentos feitos tanto por alunos quanto pela comunidade externa do IFAM. Nele, são registrados pedidos diversos, como solicitações de 2ª chamada para provas, justificativas de faltas, entre outros, garantindo que essas demandas sejam devidamente processadas e direcionadas para as áreas responsáveis.'
     },
     'gabinete': {
       'nome': 'Gabinete',
+      'nome_completo': 'Gabinete da Diretoria Geral',
       'imgMap': 'assets/fotos_setores/adm/gabinete/map.png',
       'imgCarrosel': [
         'assets/fotos_setores/adm/geral1.jpg',
@@ -23,8 +24,8 @@ class Dtbs {
         'assets/fotos_setores/adm/gabinete/2.jpg',
         'assets/fotos_setores/adm/gabinete/3.jpg',
       ],
-      'coordenador': ['Renato Valadares'],
-      'decris': 'Nome: piriri pororo o \nDescrição: local do presidente \nSignificado tal para tal...'
+      'coordenador': ['TAE João Marcos Itou Souza', 'TAE Willian Rodrigues Carvalho'],
+      'decris': 'O Gabinete Direção Geral do é o órgão executivo responsável pela administração, coordenação e supervisão de todas as atividades do Campus. Para o desempenho de suas atividades, o Gabinete da Diretoria Geral conta com o suporte das Diretorias, Departamentos, Coordenações e Divisões, além do setor de Auditoria Interna do Campus São Gabriel da Cachoeira, responsáveis por assessorar a gestão.'
     }, // modelo lindo!! e funcional
     'ginasio': {
       'nome': "Ginásio",
@@ -44,7 +45,7 @@ class Dtbs {
   static const Map pedagogico = {
     'cgti': {
       'nome': "CGTI",
-      'nome_completo': 'Coordenação e Gestão de Tecnologia e Informação',
+      'nome_completo': 'Coordenação de Gestão da Tecnologia de Informação',
       'imgMap': 'assets/fotos_setores/pedag/cgti/map.png',
       'imgCarrosel': [
         'assets/fotos_setores/pedag/cgti/geral.jpg',
@@ -53,33 +54,45 @@ class Dtbs {
         'assets/fotos_setores/pedag/cgti/3.jpg',
 
       ],
-      'coordenador': ['Ricardo', 'Marquinhos'],
-      'decris': ' Coordenação e Gestão de Tecnologia e Informação\nO pessoal aqui cuida dos computadores, se acabar a internet é culpa deles.'
+      'coordenador': ['Professor Ricardo Santos Almeida', 'Professor Átila Oliveira Araújo'],
+      'decris': 'Gerenciar e oferecer suporte às demandas de TI do campus, como redes, internet, computadores e sistemas. Atuando em manutenção, configuração, e soluções técnicas, além de planejar melhorias na infraestrutura de TI, sempre buscando atender as demandas acadêmicas e administrativas.'
     },
     'ceabi': {
       'nome': "CEABI",
-      'nome_completo': 'Centro de Estudos Afro-Brasileiros e Indígenas',
+      'nome_completo': 'Centro de Estudos Afro-Brasileiro e Indígena',
       'imgMap': 'assets/fotos_setores/pedag/ceabi/map.png',
       'imgCarrosel': [
         'assets/fotos_setores/pedag/ceabi/geral.jpg',
         'assets/fotos_setores/pedag/ceabi/1.jpg',
         'assets/fotos_setores/pedag/ceabi/2.jpg'
       ],
-      'coordenador': ['Joscival', 'Leiticia', 'E mais alguém...'],
-      'decris': ' Centro de Estudos Afro-Brasileiros e Indígenas\nO pessoal estuda coisas Indigenas aqui.'
+      'coordenador': ['Valery Nicolas de Brito', 'Letícia Alves da Silva'],
+      'decris': 'O CEABI é um órgão de direção, planejamento, assessoramento e de monitoramento das ações de ensino, pesquisa e extensão vinculadas à temática das identidades e relações étnico-raciais das populações afrodescendentes e indígenas, no âmbito de atuação do IFAM, de forma a contribuir para a promoção da equidade racial, bem como assessorar na inclusão, no currículo oficial da rede de ensino, da temática “História e Cultura Afro-Brasileira e Indígena”, conforme Leis 10.639/03 e 11.645/08.'
     },
     'dae': {
       'nome': "DAE",
-      'nome_completo': 'Departamento de Assistência ao Educando',
+      'nome_completo': 'Departamento de Assistência Estudantil',
       'imgMap': 'assets/fotos_setores/pedag/dae/map.png',
       'imgCarrosel': [
         'assets/fotos_setores/pedag/dae/geral.jpg',
         'assets/fotos_setores/pedag/dae/1.jpg',
         'assets/fotos_setores/pedag/dae/2.jpg'
       ],
-      'coordenador': ['Adreina', 'Laura', 'Joaquim'],
-      'decris': ' Departamento de Assistência ao Educando\nO pessoal é gente boa aqui, pode contar com eles.'
+      'coordenador': ['Professora Eleucimar Monteiro', 'Professor Samuel Anselmo Filho'],
+      'decris': 'O Departamento de Assistência Estudantil tem a função de ajudar os estudantes com dúvidas e necessidades relacionadas ao instituto. Ele oferece suporte em questões acadêmicas, financeiras e administrativas, buscando sempre dar respostas rápidas e soluções eficientes. A equipe trabalha para garantir que os alunos se sintam apoiados e tenham uma boa experiência durante sua trajetória na instituição. '
     },
+    'dep': {
+      'nome': "DEP",
+      'nome_completo': "Departamento de Ensino e Pesquisa ",
+      'imgMap': 'assets/fotos_setores/img cartoon do setor',
+      'imgCarrosel': [
+        'assets/fotos_setores/geral',
+        'assets/fotos_setores/1',
+        'assets/fotos_setores/2'
+      ],
+      'coordenador': ['Professor \nRonildo Francisco Agapito de Souza', 'Professor \nManoel de Jesus da Silva Pereira'],
+      'decris': 'É o Órgão do Campus responsável pelo planejamento, coordenação, supervisão e execução do ensino em todos os níveis e modalidades, articulando com a pesquisa e a extensão, cabendo-lhe o planejamento e execução de programas específicos de atendimento e apoio ao estudante numa dimensão transformadora de acordo com as políticas e diretrizes estabelecidas nos documentos oficiais em completa harmonia com os princípios, finalidades, características e objetivos do IFAM.'
+    }, // ok
     'salasCVT': {
       'nome': "Salas CVT",
       'imgMap': 'assets/fotos_setores/pedag/salasCVT/map.png',
@@ -131,6 +144,21 @@ class Dtbs {
       ],
       'coordenador': ['Não possui, coordenador.'],
       'decris': ' Salas de Aulas 1 - 7\nSalas normais com alunos dentro.'
+    },
+    'labmaker': {
+      'nome': "LabMaker",
+      'nome_completo': "Laboratório IFAMaker-CSGC",
+      'imgMap': 'assets/fotos_setores/img cartoon do setor',
+      'imgCarrosel': [
+        'assets/fotos_setores/pedag/labmaker/geral.jpg',
+        'assets/fotos_setores/pedag/labmaker/geral1.jpg',
+        'assets/fotos_setores/pedag/labmaker/geral2.jpg',
+        'assets/fotos_setores/pedag/labmaker/1.jpg',
+        'assets/fotos_setores/pedag/labmaker/2.jpg',
+        'assets/fotos_setores/pedag/labmaker/3.jpg'
+      ],
+      'coordenador': ['Professor Luís Gustavo Marcolan', 'Professor Diego Lisboa Rios'],
+      'decris': 'Um Laboratório de Prototipagem, Manufatura Aditiva e Inovação no ambiente escolar é um espaço onde estudantes podem criar e testar protótipos utilizando tecnologias como impressão 3D. Ele estimula a criatividade, o aprendizado prático e a inovação, permitindo que os alunos desenvolvam soluções e experimentem novas ideias de forma interativa.'
     }
   };
 
@@ -145,12 +173,15 @@ class Dtbs {
         'assets/fotos_setores/agro/suinocultura/geral.jpg',
         'assets/fotos_setores/agro/suinocultura/geral1.jpg'
       ],
-      'coordenador': ['Renato também, acho'],
-      'decris': 'Suinocultura, tem porco lá.'
+      'coordenador': [
+        'TAE Adinã de Oliveira Matos',
+        'TAE Raí Vasconcelos Costa'
+      ],
+      'decris': 'O setor de suinocultura é voltado para gestão e manejo de suínos. Os alunos aprendem a manejar a gestação e reprodução, monitorando a saúde das matrizes e reprodutores e aplicando técnicas de inseminação e controle genético. Também são treinados para manter a higienização das instalações, prevenindo doenças e promovendo o bem-estar dos animais',
     },
     'psicultura': {
-      'nome': "Psicultura",
-      'nome_completo': "Psicultura",
+      'nome': "Piscicultura",
+      'nome_completo': "Piscicultura",
       'imgMap': 'assets/fotos_setores/agro/psicultura/map.png',
       'imgCarrosel': [
         'assets/fotos_setores/agro/psicultura/1.jpg',
@@ -159,8 +190,20 @@ class Dtbs {
         'assets/fotos_setores/agro/psicultura/4.jpg',
         'assets/fotos_setores/agro/psicultura/5.jpg'
       ],
-      'coordenador': ['Renato também'],
-      'decris': 'Renato é dono de tudo aqui uau!!'
+      'coordenador': ['TAE Adinã de Oliveira Matos', 'TAE Raí Vasconcelos Costa'],
+      'decris': 'O setor responsável pela produção comercial de peixes e pela reprodução de espécies nativas da bacia regional. Esse setor envolve práticas de manejo e cultivo de espécies aquáticas. Além disso, o trabalho de reprodução de espécies nativas é crucial para a preservação da biodiversidade e para o equilíbrio dos ecossistemas aquáticos da região. Este conhecimento é fundamental para estudantes e profissionais da área de aquicultura, biologia e gestão ambiental, que buscam compreender e aplicar técnicas sustentáveis no setor.'
+    },
+    'dppex': {
+      'nome': "DPPEX",
+      'nome_completo': "Departamento de Pesquisa, Produção e Extensão",
+      'imgMap': 'assets/fotos_setores/img cartoon do setor',
+      'imgCarrosel': [
+        'assets/fotos_setores/geral',
+        'assets/fotos_setores/1',
+        'assets/fotos_setores/2'
+      ],
+      'coordenador': ['TAE Adinã de Oliveira Matos', 'TAE Raí Vasconcelos Costa'],
+      'decris': 'É responsável pelo planejamento, coordenação, orientação, acompanhamento, desenvolvimento e avaliação das atividades dos projetos e programas ligados às áreas de pesquisa, produção agropecuária e extensão, no âmbito do campus.'
     }
   };
 

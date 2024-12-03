@@ -8,6 +8,9 @@ import 'package:ifmap_pcct/src/themes/text_style.dart';
 import 'package:ifmap_pcct/telas/administrativo.dart';
 import 'package:ifmap_pcct/telas/agropecuaria.dart';
 import 'package:ifmap_pcct/telas/pedagogico.dart';
+import 'package:ifmap_pcct/telas_inicias/1_quemsomos.dart';
+import 'package:ifmap_pcct/telas_inicias/2_suporte.dart';
+import 'package:ifmap_pcct/telas_inicias/3_versao.dart';
 import 'package:ifmap_pcct/templates/barraNavegacao.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -19,6 +22,57 @@ class Home_base extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: BarraNavegacao(),
+
+      drawer: Drawer(
+        child: ListView(
+          // Important: Remove any padding from the ListView.
+          padding: EdgeInsets.zero,
+          children: [
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                color: AppColors.title,
+              ),
+              child: Text(
+                  'IF Map',
+                  style: TextStyles.tituloSetor,
+              ),
+            ),
+            ListTile(
+              title: const Text('Quem somos?'),
+              onTap: () {
+                Navigator.push(context,
+                    PageTransition(
+                      child: const Quemsomos(),
+                      type: PageTransitionType.fade,
+                    )
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Suporte'),
+              onTap: () {
+                Navigator.push(context,
+                    PageTransition(
+                      child: const Suporte(),
+                      type: PageTransitionType.fade,
+                    )
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('Versão'),
+              onTap: () {
+                Navigator.push(context,
+                    PageTransition(
+                      child: const Version(),
+                      type: PageTransitionType.fade,
+                    )
+                );
+              },
+            ),
+          ],
+        ),
+      ),
 
       backgroundColor: AppColors.screen,
 
